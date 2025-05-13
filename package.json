@@ -1,0 +1,12 @@
+{
+  "name": "mqtt-client-worker",
+  "version": "1.0.0",
+  "main": "mqttClient.js",
+  "scripts": {
+    "start": "node mqttClient.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.39.4",
+    "mqtt": "^5.4.1"
+  }
+}
