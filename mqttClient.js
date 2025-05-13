@@ -39,7 +39,7 @@ client.on('message', async (topic, payload) => {
       .upsert([{ device_id: deviceId }], { onConflict: ['device_id'] });
 
     // Insert the actual data with the device ID
-    const { error } = await supabase.from('bess_data2').insert([
+    const { error } = await supabase.from('user_data').insert([
       {
         device_id: deviceId,
         bms_status: data.bms_status,
